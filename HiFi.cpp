@@ -197,18 +197,13 @@ void HiFiClass::configureTx( HiFiAudioMode_t audioMode,
 
 void HiFiClass::enableTx(bool enable)
 {
-  // The built-in functions in Atmel's SSC driver, ssc_enable_tx() and 
-  // ssc_disable_tx(), don't allow both transmit and receive to be en/disabled 
-  // separately (a bug?).  It writes the entire CR rather than just 
-  // setting/clearing the appropriate flag -- overwriting any existing 
-  // configuration. 
   if (enable)
   {
-    (SSC)->SSC_CR |= SSC_CR_TXEN;
+    ssc_enable_tx(SSC);
   }
   else
   {
-    (SSC)->SSC_CR &= ~SSC_CR_TXEN;
+    ssc_disable_tx(SSC);
   }
 }
 
@@ -321,18 +316,13 @@ void HiFiClass::configureRx( HiFiAudioMode_t audioMode,
 
 void HiFiClass::enableRx(bool enable)
 {
-  // The built-in functions in Atmel's SSC driver, ssc_enable_rx() and 
-  // ssc_disable_rx(), don't allow both transmit and receive to be en/disabled 
-  // separately (a bug?).  It writes the entire CR rather than just 
-  // setting/clearing the appropriate flag -- overwriting any existing 
-  // configuration. 
   if (enable)
   {
-    (SSC)->SSC_CR |= SSC_CR_RXEN;
+    ssc_enable_rx(SSC);
   }
   else
   {
-    (SSC)->SSC_CR &= ~SSC_CR_RXEN;
+    ssc_disable_rx(SSC);
   }
 }
 
