@@ -10,24 +10,24 @@ HiFi	KEYWORD1
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-begin			    KEYWORD2
-configureTx		KEYWORD2
-enableTx			KEYWORD2
-onTxReady     KEYWORD2
-configureRx 	KEYWORD2
-enableRx  		KEYWORD2
-onRxReady 		KEYWORD2
-write			    KEYWORD2
-read		      KEYWORD2
+begin	KEYWORD2
+configureTx	KEYWORD2
+enableTx	KEYWORD2
+onTxReady	KEYWORD2
+configureRx	KEYWORD2
+enableRx	KEYWORD2
+onRxReady	KEYWORD2
+write	KEYWORD2
+read	KEYWORD2
 
 
 #######################################
 # Constants (LITERAL1)
 #######################################
-HIFI_AUDIO_MODE_MONO_LEFT     LITERAL1
-HIFI_AUDIO_MODE_MONO_RIGHT    LITERAL1
-HIFI_AUDIO_MODE_STEREO        LITERAL1
+HIFI_AUDIO_MODE_MONO_LEFT	LITERAL1
+HIFI_AUDIO_MODE_MONO_RIGHT	LITERAL1
+HIFI_AUDIO_MODE_STEREO	LITERAL1
 
-HIFI_CLK_MODE_USE_EXT_CLKS    LITERAL1
-HIFI_CLK_MODE_USE_TK_RK_CLK   LITERAL1
+HIFI_CLK_MODE_USE_EXT_CLKS	LITERAL1
+HIFI_CLK_MODE_USE_TK_RK_CLK	LITERAL1
 
