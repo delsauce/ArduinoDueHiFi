@@ -1,6 +1,8 @@
 ArduinoDueHiFi
 ==============
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/235294e9ee4c42ce863f7b10c74c79c8)](https://app.codacy.com/app/delsauce/ArduinoDueHiFi?utm_source=github.com&utm_medium=referral&utm_content=delsauce/ArduinoDueHiFi&utm_campaign=Badge_Grade_Settings)
+
 An I2S audio codec driver library for the Arduino Due board.
 
 This library will configure the SSC on the ARM to transmit and/or
